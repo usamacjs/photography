@@ -1,5 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Mr+Dafoe|Roboto');
+
 * {
   box-sizing: border-box;
   margin:0;
   padding: 0;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    list-style: none;
+}
+
+/* Utilities */
+
+.conatiner {
+    max-width: 1100px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.p-1 {
+    padding: 2rem;
+}
+
+.bg-light {
+    background: rgb(247, 245, 245);
+}
+
+/* Nav */
+
+#main-nav {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#main-nav .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+#main-nav h1 {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 2.5rem;
+    margin: .25rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+#main-nav .container ul {
+    display: flex;
+    justify-self: end;
+}
+
+#main-nav .container ul li {
+    margin: 0 1.5rem;
+}
+
+#main-nav .container ul li a {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-family: 'Mr Dafoe', cursive;
+}
+
+#main-nav .container ul li a:hover {
+    border-bottom: 2.5px solid #333;
+}
+
+#showcase .showcase-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#showcase .showcase-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+#showcase .showcase-text h1 {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 1000;
+}
+
+#showcase .showcase-text p {
+    color: #fff;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+#showcase .showcase-image {
+    background: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80') no-repeat center center/cover;
+}
+
+#works {
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+}
+
+#works .works-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.5rem;
+}
+ .cards img {
+     width: 100%;
+ }
+
+ .cards {
+     background: #fff;
+     padding: 1rem;
+     box-shadow: 7px 4px 10px -6px rgba(0,0,0,0.75);
+ }
+
+ #works .works-container > *:first-child {
+    grid-column: 1 / span 1;
+ }
+
+
+
