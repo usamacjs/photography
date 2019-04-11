@@ -171,6 +171,8 @@ li a {
      background: #fff;
      padding: 1rem;
      box-shadow: 7px 4px 10px -6px rgba(0,0,0,0.75);
+     display: grid;
+     grid-template-rows: 5fr 1fr;
  }
 
  #contact .contact-container {
