@@ -1,4 +1,49 @@
+#main-nav .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+}
+
+#main-nav .container ul {
+    display: flex;
+    justify-self: center;
+}
+
+#showcase .showcase-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#showcase .showcase-text {
+    display: none;
+}
+
+#showcase .showcase-image h1, #showcase .showcase-image p {
+    display: flex;
+}
+
+#works .works-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1.5rem;
+}
+
+
+
+
 /* Smartphones */
+
 @media(max-width: 500px) {
- 
+    #works .works-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1.5rem;
+    }
+
+    #contact .contact-container {
+        display: flex;
+        flex-direction: column;
+        height: 15vh;
+    }
 }
